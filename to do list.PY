@@ -18,10 +18,11 @@ while choice!=4:
         print(f"your entered tasks are:",user)
     elif(choice==3):
         rem=int(input("enter the task number you want to remove:"))
-        if not user:#if len(user)==0
+        if(rem>=0):
+            user.pop()
+        else:   
           print("LIST EMPTY!\nTRY ADDING TASKS!")
-        else:
-         user.remove(rem)
+        
 print("THANK YOU FOR USING TO-DO LIST.")
 print("your to-do list is closing...")
 time.sleep(3)
