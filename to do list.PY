@@ -22,6 +22,5 @@ while choice!=4:
           print("LIST EMPTY!\nTRY ADDING TASKS!")
         else:
          user.remove(rem)
-
 print("your to-do list is closing...")
 time.sleep(3)
